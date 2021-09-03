@@ -1,0 +1,29 @@
+@import url('../css/layout/header.css');
+@import url('../css/layout/footer.css');
+@import url('../css/layout/menu.css');
+@import url('../css/layout/content.css');
+body {
+    font-family: MISAnotosans-regular;
+    font-size: 13px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: MISAnotosans-bold;
+    src: url('../content/fonts/notosans-bold.3ede5aff.woff2');
+}
+
+@font-face {
+    font-family: MISAnotosans-regular;
+    src: url('../content/fonts/notosans-regular.2cb88a13.woff2');
+}
+
+@font-face {
+    font-family: MISAnotosans-italic;
+    src: url('../content/fonts/notosans-italic.1c1aaac9.woff2');
+}
+
+@font-face {
+    font-family: MISAnotosans-semibold;
+    src: url('../content/fonts/notosans-semibold.df3e6dc4.woff2');
+}

@@ -1,0 +1,668 @@
+.content {
+    position: absolute;
+    top: 48px;
+    left: 171px;
+    height: calc(100vh - 49px);
+    width: calc(100vw - 171px);
+    background-color: #e5e5e5;
+}
+
+.content .content-2 .refresh {
+    position: absolute;
+    float: right;
+    top: 24px;
+    right: 16px;
+    background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -425px -201px;
+    width: 21px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.content .add-employee {
+    position: absolute;
+    float: right;
+    top: 16px;
+    right: 16px;
+    height: 40px;
+    width: 160px;
+    background-color: #01B075;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.content .employee {
+    position: absolute;
+    float: left;
+    top: 16px;
+    left: 16px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content .content-2 {
+    position: absolute;
+    top: 68px;
+    left: 16px;
+    height: calc(100vh - 118px);
+    width: calc(100vw - 204px);
+    background-color: white;
+}
+
+.content .content-2 .search {
+    position: absolute;
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 261px;
+    top: 16px;
+    right: 56px;
+    padding-left: 8px;
+    border: 1px solid #019160;
+    border-radius: 4px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.content .content-2 .search-icon {
+    position: absolute;
+    z-index: 2;
+    top: 26px;
+    right: 56px;
+    margin-right: 8px;
+    background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -425px -33px;
+    width: 22px;
+    height: 22px;
+}
+
+.content .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.content .close {
+    float: right;
+    margin-top: 18px;
+    margin-right: 16px;
+    background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -147px -147px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.content .ask {
+    float: right;
+    margin-top: 16px;
+    margin-right: 8px;
+    background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -89px -145px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.content .modal-header {
+    height: 48px;
+    background-color: white;
+    color: black;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.content .modal-header .info {
+    float: left;
+    position: relative;
+    padding-left: 32px;
+    padding-top: 16px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content .modal-header .check {
+    float: left;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    margin-right: 16px;
+    top: 16px;
+    left: 16px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.content .modal-header .text {
+    font-size: 13px;
+    float: left;
+    position: relative;
+    top: 16px;
+    margin-left: 16px;
+}
+
+
+/* Modal Body */
+
+.content .modal-body {
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+.content .modal-body .code {
+    font-weight: bold;
+    position: relative;
+    margin-right: 100px;
+    float: left;
+}
+
+.content .modal-body .code-input {
+    position: relative;
+    float: left;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    border-color: #019160;
+    height: 32px;
+    width: 124px;
+    border: 1px solid #019160;
+    padding-left: 16px;
+}
+
+.content .modal-body .name {
+    font-weight: bold;
+    position: relative;
+    margin-right: 100px;
+    margin-left: 24px;
+    float: left;
+    margin-right: 150px;
+}
+
+.content .modal-body .name-input {
+    position: relative;
+    float: left;
+    margin-top: 8px;
+    margin-right: 32px;
+    border-radius: 4px;
+    border-color: #019160;
+    height: 32px;
+    width: 184px;
+    border: 1px solid #019160;
+    padding-left: 16px;
+}
+
+.content .modal-body .birthday {
+    font-weight: bold;
+    position: relative;
+    margin-right: 100px;
+    margin-left: 56px;
+    float: left;
+}
+
+.content .modal-body .birthday-input {
+    position: relative;
+    float: left;
+    margin-top: 8px;
+    border-radius: 4px;
+    border-color: #019160;
+    height: 32px;
+    width: 124px;
+    border: 1px solid #019160;
+    padding-left: 16px;
+}
+
+.content .modal-body .gender {
+    font-weight: bold;
+    position: relative;
+    margin-right: 300px;
+    float: left;
+}
+
+.content .modal-body .container {
+    position: relative;
+    top: 16px;
+    left: 16px;
+    height: 40px;
+    padding-left: 36px;
+    padding-right: 16px;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content .modal-body .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.content .modal-body .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+}
+
+.content .modal-body .container:hover input~.checkmark {
+    background-color: #bbbbbb;
+    cursor: pointer;
+}
+
+.content .modal-body .container input:checked~.checkmark {
+    border: 1px solid #01B075;
+}
+
+.content .modal-body .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.content .modal-body .container input:checked~.checkmark:after {
+    display: block;
+}
+
+.content .modal-body .container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #01B075;
+}
+
+.content .modal-body .phone {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 380px;
+    left: 218px;
+}
+
+.content .modal-body .phone-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .phone-input {
+    border: 1px solid #019160;
+    border-radius: 4px;
+    height: 32px;
+    width: 154px;
+    padding-left: 16px;
+}
+
+.content .modal-body .mobile {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 380px;
+    left: 32px;
+}
+
+.content .modal-body .mobile-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .mobile-input {
+    border: 1px solid #019160;
+    border-radius: 4px;
+    height: 32px;
+    width: 154px;
+    padding-left: 16px;
+}
+
+.content .modal-body .email {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 380px;
+    left: 406px;
+}
+
+.content .modal-body .email-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .email-input {
+    border: 1px solid #019160;
+    border-radius: 4px;
+    height: 32px;
+    width: 154px;
+    padding-left: 16px;
+}
+
+.content .modal-body .bank {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 454px;
+    left: 32px;
+}
+
+.content .modal-body .bank-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .bank-input {
+    border: 1px solid #019160;
+    border-radius: 4px;
+    height: 32px;
+    width: 154px;
+    padding-left: 16px;
+}
+
+.content .modal-body .bank-name {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 454px;
+    left: 218px;
+}
+
+.content .modal-body .bank-name-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .bank-name-input {
+    border: 1px solid #019160;
+    border-radius: 4px;
+    height: 32px;
+    width: 154px;
+    padding-left: 16px;
+}
+
+.content .modal-body .branch {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 454px;
+    left: 406px;
+}
+
+.content .modal-body .branch-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .branch-input {
+    border: 1px solid #019160;
+    padding-left: 16px;
+    border-radius: 4px;
+    height: 32px;
+    width: 154px;
+}
+
+
+/* Modal Footer */
+
+.content .modal-content .modal-footer {
+    top: 454px;
+    position: relative;
+    height: 54px;
+    width: calc(100% - 48px);
+    left: 32px;
+    padding-top: 16px;
+    background-color: white;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.content .modal-footer .add {
+    float: right;
+    position: relative;
+    padding-left: 32px;
+    height: 40px;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    background-color: #019160;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content .modal-footer .take {
+    float: right;
+    position: relative;
+    padding-left: 32px;
+    height: 40px;
+    width: 50px;
+    margin-right: 8px;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content .modal-footer .cancel {
+    float: left;
+    position: absolute;
+    padding-left: 24px;
+    height: 40px;
+    width: 60px;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content .modal-body .unit {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 136px;
+    margin-right: 16px;
+}
+
+.content .modal-body .unit-text {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .unit-dropdown {
+    height: 32px;
+    width: 358px;
+    border: 1px solid #019160;
+    border-radius: 4px;
+}
+
+.content .modal-body .id {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 136px;
+    left: 424px;
+}
+
+.content .modal-body .id-text {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .id-number {
+    border: 1px solid #019160;
+    border-radius: 4px;
+    height: 32px;
+    width: 204px;
+    padding-left: 16px;
+}
+
+.content .modal-body .id-date {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 136px;
+    left: 660px;
+}
+
+.content .modal-body .date {
+    border: 1px solid #019160;
+    border-radius: 4px;
+    height: 32px;
+    width: 184px;
+    padding-left: 16px;
+}
+
+
+/* Modal Content */
+
+.content .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border-radius: 4px;
+    top: 48px;
+    width: 940px;
+    height: 635px;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.content .modal-body .position {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 210px;
+    margin-right: 16px;
+}
+
+.content .modal-body .position-text {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .position-dropdown {
+    height: 32px;
+    width: 342px;
+    border: 1px solid #019160;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.content .modal-body .place {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 210px;
+    left: 424px;
+    margin-right: 16px;
+}
+
+.content .modal-body .place-text {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .place-dropdown {
+    height: 32px;
+    width: 420px;
+    border: 1px solid #019160;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.content .modal-body .address {
+    position: absolute;
+    float: left;
+    height: 64px;
+    width: 358px;
+    top: 300px;
+    margin-right: 16px;
+}
+
+.content .modal-body .address-text {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .modal-body .address-dropdown {
+    height: 32px;
+    width: 814px;
+    padding-left: 16px;
+    border: 1px solid #019160;
+    border-radius: 4px;
+}
+
+.content .table {
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 146px;
+    height: calc(100vh - 219px);
+    width: calc(100vw - 242px);
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.content .table tr:hover {
+    background-color: #bbbbbb;
+}
+
+.content .table th {
+    border: 1px solid #bbbbbb;
+    height: 20px;
+}
+
+
+/* Add Animation */
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}

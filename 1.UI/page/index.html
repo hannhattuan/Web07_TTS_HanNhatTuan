@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../css/main.css">
+
+<head>
+    <title>Công ty TNHH Sản Xuất - Thương mại - Dịch vụ QUI PHÚC</title>
+</head>
+
+<body>
+    <!-- Header-left -->
+    <div class="header-left">
+        <div class="toggle"></div>
+        <div class="logo"></div>
+    </div>
+
+
+    <!-- Header right -->
+    <div class="header-right">
+        <div class="toggle"></div>
+        <div class="name">Nguyễn Văn Mạnh</div>
+        <div class="avatar"></div>
+        <div class="bell"></div>
+        <div class="option"></div>
+        <div class="drop-box">CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC</div>
+        <div class="drop-down"></div>
+
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <div class="menu-item">
+            <div class="menu-icon-1"></div>
+            Tổng quan
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-2"></div>
+            Tiền mặt
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-3"></div>
+            Tiền gửi
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-4"></div>
+            Mua hàng
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-5"></div>
+            Bán hàng
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-6"></div>
+            Quản lý hóa đơn
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-7"></div>
+            Kho
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-8"></div>
+            Công cụ dụng cụ
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-9"></div>
+            Tài sản cố định
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-10"></div>
+            Thuế
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-11"></div>
+            Giá thành
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-12"></div>
+            Tổng hợp
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-13"></div>
+            Ngân sách
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-14"></div>
+            Báo cáo
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon-15"></div>
+            Phân tích tài chính
+        </div>
+
+    </div>
+    <!--Content-->
+    <div class="content">
+
+        <button class="add-employee" id="myBtn" onclick="myFunction()">Thêm mới nhân viên</button>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="info">Thông tin nhân viên</span>
+                    <span class="check"></span>
+                    <span class="text">Là khách hàng</span>
+
+                    <span class="check"></span>
+                    <span class="text">Là nhà cung cấp</span>
+
+                    <span class="close"></span>
+                    <span class="ask"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="code">Mã <span style="color: red">*</span></div>
+                    <div class="name">Tên <span style="color: red">*</span></div>
+                    <div class="birthday">Ngày sinh</div>
+                    <div class="gender">Giới tính</div>
+                    <input class="code-input" type="text">
+                    <input class="name-input" type="text">
+                    <input class="birthday-input" type="datetime">
+                    <label class="container">Nam
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Nữ
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                    <label class="container">Khác
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div class="unit">
+                        <div class="unit-text">Đơn vị <span style="color:red">*</span></div>
+                        <div class="unit-dropdown">
+                            <div hidden>
+                                <div class="item-page">Phòng Nhân Sự</div>
+                                <div class="item-page">Phòng đào tạo</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="id">
+                        <div class="id-text">Số CMND</div>
+                        <input class="id-number" type="text">
+                    </div>
+
+                    <div class="id-date">
+                        <div class="id-text">Ngày cấp</div>
+                        <input class="date " type="text">
+                    </div>
+
+                    <div class="position">
+                        <div class="position-text">Chức danh</div>
+                        <input class="position-dropdown" type="text">
+                    </div>
+
+
+                    <div class="place">
+                        <div class="place-text">Nơi cấp</div>
+                        <input class="place-dropdown" type="text">
+                    </div>
+
+                    <div class="address">
+                        <div class="address-text">Địa chỉ</div>
+                        <input class="address-dropdown" type="text">
+                    </div>
+
+
+                    <div class="mobile">
+                        <div class="mobile-title">ĐT di động</div>
+                        <input class="mobile-input" type="text">
+                    </div>
+
+                    <div class="phone">
+                        <div class="phone-title">ĐT cố định</div>
+                        <input class="phone-input" type="text">
+                    </div>
+
+
+
+                    <div class="email">
+                        <div class="email-title">Email</div>
+                        <input class="email-input" type="text">
+                    </div>
+
+                    <div class="bank">
+                        <div class="bank-title">Tài khoản ngân hàng</div>
+                        <input class="bank-input" type="text">
+                    </div>
+                    <div class="bank-name">
+                        <div class="bank-name-title">Tên ngân hàng</div>
+                        <input class="bank-name-input" type="text">
+                    </div>
+
+                    <div class="branch">
+                        <div class="branch-title">Chi nhánh</div>
+                        <input class="branch-input" type="text">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <span class="add">Cất và thêm</span>
+                    <span class="take">Cất</span>
+                    <span class="cancel">Hủy</span>>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="../js/employee.js"></script>
+        <div class="employee">Nhân viên</div>
+
+        <div class="content-2">
+            <a class="refresh" href="../page/index.html" role="button"></a>
+            <div class="search-icon"></div>
+            <input type="text" class="search" placeholder="Tìm kiếm mã, tên nhân viên" />
+
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>STT</th>
+                <th>MÃ NHÂN VIÊN</th>
+                <th>TÊN NHÂN VIÊN</th>
+                <th>GIỚI TÍNH</th>
+                <th>NGÀY SINH</th>
+                <th>SỐ CMND</th>
+                <th>CHỨC DANH</th>
+                <th>TÊN ĐƠN VỊ</th>
+                <th>SỐ TÀI KHOẢN</th>
+                <th>TÊN NGÂN HÀNG</th>
+                <th>CHI NHÁNH NGÂN HÀNG</th>
+                <th>CHỨC NĂNG</th>
+            </tr>
+            <tr>
+                <th>STT</th>
+                <th>NV-007</th>
+                <th>Hàn Nhật Tuấn</th>
+                <th>Nam</th>
+                <th>22/12/1999</th>
+                <th>098179871</th>
+                <th>Nhân viên</th>
+                <th>Phòng nhân sự</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>STT</th>
+                <th>NV-007</th>
+                <th>Hàn Nhật Tuấn</th>
+                <th>Nam</th>
+                <th>22/12/1999</th>
+                <th>098179871</th>
+                <th>Nhân viên</th>
+                <th>Phòng nhân sự</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>STT</th>
+                <th>NV-007</th>
+                <th>Hàn Nhật Tuấn</th>
+                <th>Nam</th>
+                <th>22/12/1999</th>
+                <th>098179871</th>
+                <th>Nhân viên</th>
+                <th>Phòng nhân sự</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>STT</th>
+                <th>NV-007</th>
+                <th>Hàn Nhật Tuấn</th>
+                <th>Nam</th>
+                <th>22/12/1999</th>
+                <th>098179871</th>
+                <th>Nhân viên</th>
+                <th>Phòng nhân sự</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>STT</th>
+                <th>NV-007</th>
+                <th>Hàn Nhật Tuấn</th>
+                <th>Nam</th>
+                <th>22/12/1999</th>
+                <th>098179871</th>
+                <th>Nhân viên</th>
+                <th>Phòng nhân sự</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>STT</th>
+                <th>NV-007</th>
+                <th>Hàn Nhật Tuấn</th>
+                <th>Nam</th>
+                <th>22/12/1999</th>
+                <th>098179871</th>
+                <th>Nhân viên</th>
+                <th>Phòng nhân sự</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>STT</th>
+                <th>NV-007</th>
+                <th>Hàn Nhật Tuấn</th>
+                <th>Nam</th>
+                <th>22/12/1999</th>
+                <th>098179871</th>
+                <th>Nhân viên</th>
+                <th>Phòng nhân sự</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+        </table>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

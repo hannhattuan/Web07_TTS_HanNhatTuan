@@ -1,0 +1,105 @@
+        .header-left {
+            display: flex;
+            align-items: center;
+            height: 48px;
+            border-right: 1px solid #454545;
+            background-color: #454545;
+            width: 170px;
+        }
+        
+        .header-left .toggle {
+            width: 24px;
+            height: 24px;
+            background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -428px -92px;
+            width: 16px;
+            height: 16px;
+            margin: 12px 10px 12px 16px;
+            cursor: pointer;
+        }
+        
+        .header-left .logo {
+            background-image: url('../../content/img/Logo_Module_TiengViet_White.66947422.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px center;
+            height: 32px;
+            width: 100px;
+        }
+        
+        .header-right {
+            position: absolute;
+            align-items: center;
+            box-sizing: border-box;
+            left: 171px;
+            top: 0px;
+            height: 48px;
+            width: calc(100vw - 171px);
+        }
+        
+        .header-right .avatar {
+            float: right;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            margin-right: 16px;
+            border-radius: 50%;
+            background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -352px -894px;
+            height: 32px;
+            width: 32px;
+        }
+        
+        .header-right .name {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            float: right;
+        }
+        
+        .header-right .toggle {
+            float: right;
+            height: 12px;
+            width: 12px;
+            margin: 18px 16px 18px 16px;
+            background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -1078px -38px;
+            width: 10px;
+            height: 5px;
+            cursor: pointer;
+        }
+        
+        .header-right .drop-down {
+            float: left;
+            margin-left: 8px;
+            margin-top: 20px;
+            background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -1129px -365px;
+            width: 14px;
+            height: 8px;
+            cursor: pointer;
+        }
+        
+        .header-right .bell {
+            float: right;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            margin-right: 16px;
+            background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -788px -30px;
+            width: 22px;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        .header-right .drop-box {
+            float: left;
+            margin-top: 16px;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+        
+        .header-right .option {
+            float: left;
+            margin-top: 16px;
+            margin-left: 16px;
+            height: 24px;
+            width: 24px;
+            background: url('../../content/icon/Sprites.64af8f61.svg') no-repeat -847px -35px;
+            width: 16px;
+            height: 14px;
+            cursor: pointer;
+        }
